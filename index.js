@@ -8,7 +8,7 @@ var renderPostCSS = function (data, options) {
         });
 
     return postcss(plugins)
-        .process(data)
+        .process(data, { from: options.path })
         .then(function (result) {
             return result.css;
         });
