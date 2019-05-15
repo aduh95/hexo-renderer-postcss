@@ -8,21 +8,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshacheson/hexo-renderer-postcss.git"
+    "url": "git+https://github.com/arturi/hexo-renderer-postcss.git"
   },
   "keywords": [
-    "Hexo",
-    "PostCSS",
+    "hexo",
+    "postcss",
     "renderer",
     "plugin"
   ],
   "author": "Joshua Acheson <joshua.acheson@gmail.com> (http://joshacheson.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joshacheson/hexo-renderer-postcss/issues"
+    "url": "https://github.com/arturi/hexo-renderer-postcss/issues"
   },
-  "homepage": "https://github.com/joshacheson/hexo-renderer-postcss#readme",
+  "homepage": "https://github.com/arturi/hexo-renderer-postcss#readme",
   "dependencies": {
-    "postcss": "^6.0.16"
+    "postcss": "^7.0.16",
+    "postcss-load-config": "^2.0.0"
   }
 }

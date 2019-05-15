@@ -1,4 +1,10 @@
 # hexo-renderer-postcss
+
 A Hexo plugin for rendering PostCSS
 
-I'm not sure how to make this work with all the various PostCSS plugins without requiring them as dependencies. If you have an idea, let me know. If you want a dependency added, pull request :)
+It uses [`postcss-load-config`](https://www.npmjs.com/package/postcss-load-config).
+Create a `postcss.config.js` file to configure plugins et cetera.
+
+## License
+
+[MIT](./LICENSE)

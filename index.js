@@ -1,17 +1,10 @@
-var postcss = require('postcss');
+const postcss = require('postcss')
+const postcssrc = require('postcss-load-config')
 
-var renderPostCSS = function (data, options) {
-    var plugins = Object.keys(hexo.config.postcss.plugins)
-        .map(function (pluginName) {
-            return require(pluginName)
-                (hexo.config.postcss.plugins[pluginName] || undefined);
-        });
+function renderPostCSS (data) {
+  return postcssrc({})
+    .then(({ plugins, options }) => postcss(plugins).process(data, options))
+    .then((result) => result.css)
+}
 
-    return postcss(plugins)
-        .process(data, { from: options.path })
-        .then(function (result) {
-            return result.css;
-        });
-};
-
-hexo.extend.filter.register('after_render:css', renderPostCSS);
+hexo.extend.filter.register('after_render:css', renderPostCSS)
