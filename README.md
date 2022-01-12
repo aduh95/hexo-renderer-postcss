@@ -1,11 +1,11 @@
-# @goto-bus-stop/hexo-renderer-postcss
+# @aduh95/hexo-renderer-postcss
 
 Minimalist Hexo plugin for rendering PostCSS
 
 ## Installation
 
 ```
-npm install @goto-bus-stop/hexo-renderer-postcss
+npm install @aduh95/hexo-renderer-postcss
 ```
 
 ## Usage

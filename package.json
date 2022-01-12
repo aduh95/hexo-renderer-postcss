@@ -1,14 +1,11 @@
 {
-  "name": "@goto-bus-stop/hexo-renderer-postcss",
-  "version": "2.0.0",
+  "name": "@aduh95/hexo-renderer-postcss",
+  "version": "3.0.0",
   "description": "Minimalist Hexo plugin for rendering PostCSS",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goto-bus-stop/hexo-renderer-postcss.git"
+    "url": "git+https://github.com/aduh95/hexo-renderer-postcss.git"
   },
   "keywords": [
     "hexo",
@@ -19,11 +16,16 @@
   "author": "Joshua Acheson <joshua.acheson@gmail.com> (http://joshacheson.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/goto-bus-stop/hexo-renderer-postcss/issues"
+    "url": "https://github.com/aduh95/hexo-renderer-postcss/issues"
   },
-  "homepage": "https://github.com/goto-bus-stop/hexo-renderer-postcss#readme",
+  "homepage": "https://github.com/aduh95/hexo-renderer-postcss#readme",
   "dependencies": {
-    "postcss": "^7.0.16",
-    "postcss-load-config": "^2.0.0"
+    "postcss-load-config": "^3.1.1"
+  },
+  "devDependencies": {
+    "postcss": "^8.0.0"
+  },
+  "peerDependencies": {
+    "postcss": "7.x || 8.x"
   }
 }
